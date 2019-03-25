@@ -1,0 +1,10 @@
+<catalog name="auto-programme">
+    <chain name="team-build">
+        <command id="BA" className="chain.BACommand"/>
+        <command id="Developer" className="chain.DeveloperCommand"/>
+        <command id="QA" className="chain.QACommand"/>
+    </chain>
+    <chain name="re-check">
+        <command id="CheckFilter" className="chain.ProgrammeCheckFilter"/>
+    </chain>
+</catalog>
