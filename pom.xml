@@ -15,6 +15,7 @@
         <commons.digester.version>2.1</commons.digester.version>
         <commons.collections.version>3.2.2</commons.collections.version>
         <commons.beanUtils.version>1.9.3</commons.beanUtils.version>
+        <java.servlet.version>4.0.1</java.servlet.version>
     </properties>
 
     <modules>
@@ -51,6 +52,13 @@
                 <version>${commons.beanUtils.version}</version>
             </dependency>
 
+            <!-- https://mvnrepository.com/artifact/javax.servlet/javax.servlet-api -->
+            <dependency>
+                <groupId>javax.servlet</groupId>
+                <artifactId>javax.servlet-api</artifactId>
+                <version>${java.servlet.version}</version>
+                <scope>provided</scope>
+            </dependency>
         </dependencies>
     </dependencyManagement>
 
