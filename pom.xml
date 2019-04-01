@@ -21,6 +21,8 @@
     <modules>
         <module>linear-algebra</module>
         <module>design-pattern</module>
+        <module>algorithm</module>
+        <module>javascript</module>
     </modules>
 
     <dependencyManagement>
