@@ -26,7 +26,7 @@
         <br>---------------<br>
 
         <p>{{ modelMessage }}</p>
-        <input v-model="modelMessage">
+        <input v-model="modelMessage" v-on:change="saveModelMessage()">
         <br>---------------<br>
 
         <ol>
@@ -91,11 +91,20 @@
                 if (event) {
                     alert(event.target.tagName)
                 }
+            },
+            saveModelMessage: function () {
+                localStorage.setItem('modelMessage', JSON.stringify(this.modelMessage));
             }
         },
         computed: {
             reversedComputedMessage: function () {
                 return this.computedMessage.split('').reverse().join('')
+            }
+        },
+        mounted() {
+            var msg = JSON.parse(localStorage.getItem('modelMessage'));
+            if (msg) {
+                this.modelMessage = msg;
             }
         }
     });
