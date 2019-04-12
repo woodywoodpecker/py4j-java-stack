@@ -56,11 +56,16 @@
         <button v-on:click="greet">Greet</button>
         <br>---------------<br>
 
+        <v-select :options="['foo','bar']"></v-select>
+
     </div>
 </body>
 
 <script src="component/todo-item.js"></script>
+<script src="lib/vue-select.js"></script>
 <script>
+    Vue.component('v-select', VueSelect.VueSelect);
+
     var app = new Vue({
         el: '#app',
         data: {
