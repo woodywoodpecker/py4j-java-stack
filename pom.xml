@@ -23,6 +23,7 @@
         <module>design-pattern</module>
         <module>algorithm</module>
         <module>javascript</module>
+        <module>block-chain</module>
     </modules>
 
     <dependencyManagement>
