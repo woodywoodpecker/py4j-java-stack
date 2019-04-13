@@ -1,13 +1,11 @@
 # py4j-java-stack
 
-## 描述
+## Description
 
 [========]
 
-> 以记录自己的技术栈为主的programme，每天埋着头工作，时间总是不知不觉之间就这么过去。
-回过头，发现很多工作中用到的东西用过就用了，很长时间不用，就会生疏，再遇到相同问题的
-时候，又到处去找，东翻一下，西翻一下。所以给自己找了三点原因建立这个，
-- 一是希望自己在又需要寻找solution的时候能够到这里快速找到；
-- 二是有一个温故可以知新的地儿；
-- 三是记录自己工作中积累的经验体会。
+> It is technical stack based on java,always working everyday and solved so many problems.So I want to record some.
+- I can find the solution that I tried in the old days
+- give a chance to myself that I can review my solution
+- this is like a history book of my self experience
 
