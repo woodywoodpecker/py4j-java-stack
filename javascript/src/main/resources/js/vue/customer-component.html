@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <div id="app">
+        <my-1-component></my-1-component>
+    </div>
+</body>
+
+<script src="./lib/vue.min.js"></script>
+<script src="./lib/httpVueLoader.js"></script>
+<script>
+
+    var app = new Vue({
+        el: '#app',
+        data: {
+            message: 'Hello Vue.js!',
+            computedMessage: 'computed message',
+            todos: [
+                { text: '学习 JavaScript' },
+                { text: '学习 Vue' },
+                { text: '整个牛项目' }
+            ],
+            modelMessage: 'this is model message',
+            groceryList: [
+                { id: 0, text: '蔬菜' },
+                { id: 1, text: '奶酪' },
+                { id: 2, text: '随便其它什么人吃的东西' },
+                { id: 3, text: 'xxx' }
+            ],
+            counter: 0,
+            man: {
+                name: 'ppp',
+                age: 30
+            }
+        },
+        methods: {
+
+        },
+        computed: {
+
+        },
+        mounted() {
+
+        },
+        components: {
+            'my-1-component': httpVueLoader('./component/my-1-component.vue'),
+        }
+    });
+
+</script>
+
+</html>
