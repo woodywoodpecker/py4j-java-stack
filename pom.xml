@@ -26,6 +26,7 @@
         <module>javascript</module>
         <module>block-chain</module>
         <module>search-engine</module>
+        <module>spring</module>
     </modules>
 
     <dependencyManagement>
